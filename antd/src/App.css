@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+Header {
+  text-align: center
+}
+
+Footer {
+  text-align: center;
+}
+
+.site-calendar-customize-header-wrapper {
+  border: 1px solid #f0f0f0;
+  border-radius: 1px;
+}
+
+.editable-row .ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+}
