@@ -1,9 +1,9 @@
-import React, { Suspense } from 'react';
-import { EditableTable } from './components/TableComponent';
-import { Modals } from './components/Modals';
-import { Apps } from './components/Navigation';
-import { TodoList } from './components/TodoList';
-import { Route, Switch } from 'react-router-dom';
+import React, {Suspense} from 'react';
+import {Modals} from './components/Modals';
+import {Apps} from './components/Navigation';
+import {TodoList} from './components/TodoList';
+import {Route, Switch} from 'react-router-dom';
+import {CalendarT} from "./components/Calendar";
 
 const Sequencer = React.lazy(() => import('./pages/Sequencer'));
 const Ocs = React.lazy(() => import('./pages/Ocs'));
@@ -12,7 +12,7 @@ export const Routes = () => {
   return (
     <Switch>
       <Route path="/Apps/1">
-        <EditableTable />
+        <CalendarT />
       </Route>
       <Route path="/Apps/2/Sequencers">
         <TodoList />
