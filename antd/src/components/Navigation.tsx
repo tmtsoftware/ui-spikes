@@ -55,12 +55,12 @@ export const BreadCrumbNav = withRouter((props) => {
 export const Navigation = () => {
   const [current, setCurrent] = useState<string>('config');
 	const [top] = useState(10);
-	
+
   return (
     <Affix offsetTop={top}>
       <Menu onClick={(e) => setCurrent(e.key.toString())} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="config" icon={<SettingOutlined />}>
-          <Link to={'/apps/1'}>Config App</Link>
+          <Link to={'/config'}>Config App</Link>
         </Menu.Item>
         <Menu.Item key="app" disabled>
           Agent App

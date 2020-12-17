@@ -22,3 +22,9 @@ Footer {
   position: absolute;
   top: 100%;
 }
+
+.calender {
+  max-width: 500px;
+}
+
+

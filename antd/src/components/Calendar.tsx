@@ -1,5 +1,5 @@
-import { Calendar, Col, Radio, Row, Select, Typography } from 'antd';
-import type { CalendarMode } from 'antd/lib/calendar/generateCalendar';
+import {Calendar, Col, Radio, Row, Select, Typography, DatePicker, Divider} from 'antd';
+import type {CalendarMode} from 'antd/lib/calendar/generateCalendar';
 import React from 'react';
 import './Calendar.css'
 
@@ -9,13 +9,15 @@ function onPanelChange(value: any, mode: CalendarMode) {
 
 export const CalendarT = () => {
   return (
-    <div>
+    <>
+      <DatePicker />
+      <Divider/>
       <Calendar
         fullscreen={false}
         onPanelChange={onPanelChange}
-        className="Calendar"
+        className={'calender'}
       />
-    </div>
+    </>
   );
 };
 

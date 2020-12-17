@@ -1,5 +1,8 @@
-import { Button, Modal, Space } from 'antd';
+import {Button, Modal, Space} from 'antd';
 import React from 'react';
+import {Datatable} from "./TableComponent";
+import DescriptionsItem from "antd/es/descriptions/Item";
+import Title from 'antd/lib/typography/Title';
 
 export const Modals = () => {
   const info = () => {
@@ -11,7 +14,8 @@ export const Modals = () => {
           <p>some messages...some messages...</p>
         </div>
       ),
-      onOk() {},
+      onOk() {
+      },
     });
   };
 
@@ -36,13 +40,17 @@ export const Modals = () => {
   };
 
   return (
-    <Space direction="horizontal" size="small">
-      <Button onClick={info}>Info</Button>
-      <Button onClick={success}>Success</Button>
-      <Button danger onClick={error}>
-        Error
-      </Button>
-      <Button onClick={warning}>Warning</Button>
-    </Space>
+    <>
+      <Datatable/>
+      <Title> Modals </Title>
+      <Space direction="horizontal" size="small">
+        <Button onClick={info}>Info</Button>
+        <Button onClick={success}>Success</Button>
+        <Button danger onClick={error}>
+          Error
+        </Button>
+        <Button onClick={warning}>Warning</Button>
+      </Space>
+    </>
   );
 };
