@@ -1,8 +1,7 @@
 import {Button, Modal, Space} from 'antd';
 import React from 'react';
 import {Datatable} from "./TableComponent";
-import DescriptionsItem from "antd/es/descriptions/Item";
-import Title from 'antd/lib/typography/Title';
+import {Typography} from 'antd';
 
 export const Modals = () => {
   const info = () => {
@@ -42,7 +41,7 @@ export const Modals = () => {
   return (
     <>
       <Datatable/>
-      <Title> Modals </Title>
+      <Typography.Title level={4}> Modals </Typography.Title>
       <Space direction="horizontal" size="small">
         <Button onClick={info}>Info</Button>
         <Button onClick={success}>Success</Button>

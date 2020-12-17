@@ -60,7 +60,7 @@ export const Navigation = () => {
     <Affix offsetTop={top}>
       <Menu onClick={(e) => setCurrent(e.key.toString())} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="config" icon={<SettingOutlined />}>
-          <Link to={'/config'}>Config App</Link>
+          <Link to={'/apps/1'}>Config App</Link>
         </Menu.Item>
         <Menu.Item key="app" disabled>
           Agent App

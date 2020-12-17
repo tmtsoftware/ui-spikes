@@ -3,7 +3,7 @@ import {Modals} from './components/Modals';
 import {Apps} from './components/Navigation';
 import {TodoList} from './components/TodoList';
 import {Route, Switch} from 'react-router-dom';
-import {CalendarT} from "./components/Calendar";
+import {CustomCalendar} from "./components/Calendar";
 
 const Sequencer = React.lazy(() => import('./pages/Sequencer'));
 const Ocs = React.lazy(() => import('./pages/Ocs'));
@@ -12,10 +12,10 @@ export const Routes = () => {
   return (
     <Switch>
       <Route path="/Apps/1">
-        <CalendarT />
+        <CustomCalendar />
       </Route>
       <Route path="/Apps/2/Sequencers">
-        <TodoList />
+        <Modals />
       </Route>
       <Route
         path={[
