@@ -15,13 +15,13 @@ export const Header = ({onBack}: HeaderProps) => {
       title="TMT"
       subTitle={
         <Space direction="horizontal">
-          <span style={{ marginRight: '40px' }}>Engineering Apps</span>
+          <span className={'subtitle'}>Engineering Apps</span>
           <BreadCrumbNav />
         </Space>
       }
       extra={
         <Input.Search
-          style={{ marginTop: '10px' }}
+          className={'search'}
           placeholder="Search within TMT"
         />
       }

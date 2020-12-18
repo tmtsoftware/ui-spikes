@@ -1,0 +1,10 @@
+
+.searchBox {
+  width: 1400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchAutocomplete {
+  width: 400px;
+}
