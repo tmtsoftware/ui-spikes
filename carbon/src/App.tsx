@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import 'carbon-components/css/carbon-components.css';
+import { CustomForm } from './components/form';
+import { HeaderBaseWNavigation } from './components/HeaderBar';
+import { CustomDataTable } from './components/CustomDataTable';
 
-interface AppProps {}
+interface AppProps {
+}
 
 function App({}: AppProps) {
   // Create the count state.
@@ -15,25 +19,11 @@ function App({}: AppProps) {
   // Return the App component.
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <HeaderBaseWNavigation />
+      <CustomForm />
+      <hr />
+      <CustomDataTable />
+
     </div>
   );
 }
